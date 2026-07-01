@@ -1,0 +1,441 @@
+__label__TIME_CURRENT che ore sono
+__label__TIME_CURRENT che ora è
+__label__TIME_CURRENT mi dici l'ora
+__label__TIME_CURRENT dimmi l'orario
+__label__TIME_CURRENT dimmi l'ora
+__label__TIME_CURRENT sai che ore sono
+__label__TIME_CURRENT che ore sono?
+__label__TIME_CURRENT l'ora per favore
+__label__TIME_CURRENT che ore sono adesso
+__label__TIME_CURRENT orario attuale
+__label__TIME_CURRENT che ora è adesso
+__label__TIME_CURRENT mi puoi dire l'ora
+__label__TIME_CURRENT dimmi che ore sono
+__label__TIME_CURRENT che ore fa
+__label__TIME_CURRENT ore attuali
+__label__TIME_CURRENT l'orario corrente
+__label__TIME_CURRENT sono le?
+__label__TIME_CURRENT l'ora?
+__label__TIME_CURRENT ma che ore sono?
+
+
+__label__DAY_CURRENT che giorno è oggi
+__label__DAY_CURRENT ma oggi che giorno è
+__label__DAY_CURRENT oggi siamo giorno?
+__label__DAY_CURRENT che giorno siamo?
+__label__DAY_CURRENT che giorno siamo oggi
+__label__DAY_CURRENT giorno attuale
+__label__DAY_CURRENT giorno corrente
+__label__DAY_CURRENT oggi è?
+__label__DAY_CURRENT oggi siamo?
+__label__DAY_CURRENT ma che giorno è oggi
+__label__DAY_CURRENT mi puoi dire che giorno siamo oggi?
+__label__DAY_CURRENT dimmi il giorno attuale
+__label__DAY_CURRENT che giorno è oggi?
+__label__DAY_CURRENT sai che giorno è oggi
+__label__DAY_CURRENT il giorno di oggi
+__label__DAY_CURRENT mi sapresti dire che giorno è oggi?
+
+
+__label__DAY_FUTURE che giorno è lunedì
+__label__DAY_FUTURE che giorno cade il 25 dicembre
+__label__DAY_FUTURE il 14 febbraio che giorno è
+__label__DAY_FUTURE che giorno sarà domani
+__label__DAY_FUTURE tra due giorni che giorno è
+__label__DAY_FUTURE che giorno è il prossimo venerdì
+__label__DAY_FUTURE martedì che giorno è?
+__label__DAY_FUTURE che giorno sarà il 15
+__label__DAY_FUTURE il 21 Gennaio che giorno sarà
+__label__DAY_FUTURE che giorno viene il 26
+__label__DAY_FUTURE domani che giorno è?
+__label__DAY_FUTURE il 3 marzo che giorno cade?
+__label__DAY_FUTURE lunedì prossimo che giorno è?
+__label__DAY_FUTURE che giorno sarà il 15 Novembre?
+__label__DAY_FUTURE che giorno è mercoledì?
+__label__DAY_FUTURE mi diresti che giorno è martedì?
+__label__DAY_FUTURE che giorno è l'1?
+__label__DAY_FUTURE che giorno è l'8 marzo?
+__label__DAY_FUTURE che giorno cade l'11 novembre?
+__label__DAY_FUTURE l'1 gennaio che giorno è?
+__label__DAY_FUTURE mi sapresti dire che giorno è giovedì?
+__label__DAY_FUTURE mi dici che giorno è il 17?
+
+
+__label__WEATHER che tempo fa oggi?
+__label__WEATHER che tempo c'è oggi?
+__label__WEATHER che tempo fa a Roma
+__label__WEATHER che tempo c'è a Milano
+__label__WEATHER mi dai le previsioni meteo
+__label__WEATHER mi dici che tempo c'è a Londra
+__label__WEATHER ma che tempo è previsto oggi
+__label__WEATHER quali sono le previsioni di oggi
+__label__WEATHER che tempo porta a Parigi
+__label__WEATHER com'è il tempo
+__label__WEATHER com'è il tempo a Barcellona
+__label__WEATHER come è il tempo
+__label__WEATHER come è il tempo a Berlino
+__label__WEATHER previsioni di oggi?
+__label__WEATHER a Pechino che tempo c'è?
+__label__WEATHER mi diresti che tempo fa a Torino?
+__label__WEATHER sai che tempo c'è a Venezia?
+__label__WEATHER potresti dirmi le previsioni di oggi?
+
+
+__label__MUSIC_PLAY metti Maschio di Annalisa
+__label__MUSIC_PLAY fai partire Marziani
+__label__MUSIC_PLAY metti Bohemian Rhapsody
+__label__MUSIC_PLAY riproduci Blinding Lights di The Weeknd
+__label__MUSIC_PLAY metti qualcosa di Vasco Rossi
+__label__MUSIC_PLAY voglio ascoltare Thriller
+__label__MUSIC_PLAY metti su una canzone di Ligabue
+__label__MUSIC_PLAY fammi sentire Monster di Skillet
+__label__MUSIC_PLAY metti su Lose Yourself di Eminem
+__label__MUSIC_PLAY riproduci Thunderstruck degli AC/DC
+__label__MUSIC_PLAY fai partire Numb dei Linkin Park
+__label__MUSIC_PLAY voglio ascoltare Hotel California degli Eagles
+__label__MUSIC_PLAY metti Eye of the Tiger dei Survivor
+__label__MUSIC_PLAY fammi sentire Back in Black degli AC/DC
+__label__MUSIC_PLAY metti storie brevi
+__label__MUSIC_PLAY riproduci storie brevi
+__label__MUSIC_PLAY metti maschio di annalisa
+__label__MUSIC_PLAY metti monster
+__label__MUSIC_PLAY fammi sentire shallow
+__label__MUSIC_PLAY metti no one to kill in the sky
+__label__MUSIC_PLAY riproduci jane di the long face
+__label__MUSIC_PLAY ascolta qualcosa di rilassante
+__label__MUSIC_PLAY metti su qualcosa
+__label__MUSIC_PLAY voglio sentire una canzone
+__label__MUSIC_PLAY riproduci qualcosa di vasco
+__label__MUSIC_PLAY fai partire una canzone dei radiohead
+__label__MUSIC_PLAY metti la canzone di annalisa
+__label__MUSIC_PLAY fammi sentire qualcosa di eminem
+__label__MUSIC_PLAY metti somebody that i used to know
+__label__MUSIC_PLAY riproduci somebody that i used to know di gotye
+
+
+__label__MUSIC_STOP stop
+__label__MUSIC_STOP stoppa
+__label__MUSIC_STOP metti in pausa
+__label__MUSIC_STOP ferma musica
+__label__MUSIC_STOP puoi mettere in pausa?
+__label__MUSIC_STOP interrompi la musica
+__label__MUSIC_STOP silenzio
+__label__MUSIC_STOP fa silenzio un attimo
+__label__MUSIC_STOP puoi fare silenzio un attimo?
+__label__MUSIC_STOP ferma un attimo
+__label__MUSIC_STOP puoi fermare la musica?
+__label__MUSIC_STOP metti in pausa per favore
+__label__MUSIC_STOP puoi stoppare?
+__label__MUSIC_STOP ferma la riproduzione
+__label__MUSIC_STOP ferma la musica
+
+
+__label__MUSIC_RESUME continua
+__label__MUSIC_RESUME riprendi riproduzione
+__label__MUSIC_RESUME riparti
+__label__MUSIC_RESUME riprendi
+__label__MUSIC_RESUME continua riproduzione musica
+__label__MUSIC_RESUME continua riproduzione
+__label__MUSIC_RESUME fai ripartire la musica
+__label__MUSIC_RESUME riprendi la canzone
+__label__MUSIC_RESUME vai avanti con la musica
+__label__MUSIC_RESUME continua musica
+__label__MUSIC_RESUME riprendi musica
+__label__MUSIC_RESUME riprendi canzone
+__label__MUSIC_RESUME continua canzone
+__label__MUSIC_RESUME fai ripartire musica
+__label__MUSIC_RESUME fai ripartire la canzone
+
+
+__label__MUSIC_SKIP skip
+__label__MUSIC_SKIP skippa
+__label__MUSIC_SKIP passa alla prossima
+__label__MUSIC_SKIP prossima
+__label__MUSIC_SKIP prossima canzone
+__label__MUSIC_SKIP riproduci la prossima
+__label__MUSIC_SKIP metti quella dopo
+__label__MUSIC_SKIP metti la prossima
+__label__MUSIC_SKIP vai alla prossima canzone
+__label__MUSIC_SKIP salta
+
+
+__label__MUSIC_END termina musica
+__label__MUSIC_END termina la musica
+__label__MUSIC_END basta musica
+__label__MUSIC_END termina riproduzione
+__label__MUSIC_END non voglio più sentire musica
+__label__MUSIC_END smetti di riprodurre
+__label__MUSIC_END chiudi musica
+
+
+__label__MUSIC_VOLUME alza il volume a 80
+__label__MUSIC_VOLUME metti il volume a 50
+__label__MUSIC_VOLUME volume a 30
+__label__MUSIC_VOLUME abbassa il volume a 25
+__label__MUSIC_VOLUME imposta il volume a 60
+__label__MUSIC_VOLUME metti volume a 10
+__label__MUSIC_VOLUME imposta volume a 70
+__label__MUSIC_VOLUME alza
+__label__MUSIC_VOLUME alza il volume
+__label__MUSIC_VOLUME abbassa
+__label__MUSIC_VOLUME abbassa il volume
+__label__MUSIC_VOLUME metti più forte
+__label__MUSIC_VOLUME metti più piano
+__label__MUSIC_VOLUME volume a 100 per favore
+__label__MUSIC_VOLUME puoi alzare il volume?
+
+
+__label__MUSIC_ADD_TO_QUEUE aggiungi in coda Begging
+__label__MUSIC_ADD_TO_QUEUE aggiungi alla coda Stella di Broadway di Cesare Cremonini
+__label__MUSIC_ADD_TO_QUEUE metti in coda storie brevi
+__label__MUSIC_ADD_TO_QUEUE accoda Shallow
+__label__MUSIC_ADD_TO_QUEUE dopo riproduci Occidentalis karma di Gabbani
+__label__MUSIC_ADD_TO_QUEUE dopo metti High Above
+__label__MUSIC_ADD_TO_QUEUE metti Alaska baby dopo
+__label__MUSIC_ADD_TO_QUEUE riproduci Balorda nostalgia dopo
+__label__MUSIC_ADD_TO_QUEUE metti in coda Scatola di Laura Pausini
+__label__MUSIC_ADD_TO_QUEUE accoda Estate dei Negramaro
+__label__MUSIC_ADD_TO_QUEUE metti solo 3 minuti dei Negramaro dopo
+__label__MUSIC_ADD_TO_QUEUE riproduci animals dei Maroon 5 dopo per favore
+__label__MUSIC_ADD_TO_QUEUE aggiungi in coda oh ma di Rocco Hunt e Noemi
+__label__MUSIC_ADD_TO_QUEUE aggiungi alla coda la mia città
+__label__MUSIC_ADD_TO_QUEUE dopo riproduci aranciata
+__label__MUSIC_ADD_TO_QUEUE metti in coda Monster di Skillet
+__label__MUSIC_ADD_TO_QUEUE metti in coda Bohemian Rhapsody
+__label__MUSIC_ADD_TO_QUEUE metti in coda qualcosa di Vasco Rossi
+__label__MUSIC_ADD_TO_QUEUE metti in coda Thriller
+__label__MUSIC_ADD_TO_QUEUE metti in coda una canzone di Ligabue
+__label__MUSIC_ADD_TO_QUEUE aggiungi Shallow alla coda
+__label__MUSIC_ADD_TO_QUEUE metti in coda Shallow
+__label__MUSIC_ADD_TO_QUEUE aggiungi shallow alla coda
+__label__MUSIC_ADD_TO_QUEUE metti in coda aranciata di madame
+__label__MUSIC_ADD_TO_QUEUE puoi aggiungere in coda skillet
+__label__MUSIC_ADD_TO_QUEUE puoi aggiungere in coda musica rilassante
+__label__MUSIC_ADD_TO_QUEUE puoi aggiungere alla coda qualcosa
+__label__MUSIC_ADD_TO_QUEUE aggiungi in coda qualcosa di rilassante
+__label__MUSIC_ADD_TO_QUEUE metteresti in coda qualcosa?
+__label__MUSIC_ADD_TO_QUEUE potresti mettere in coda qualcosa?
+__label__MUSIC_ADD_TO_QUEUE puoi mettere in coda qualcosa?
+
+
+__label__MUSIC_QUEUE_SHOW mostra coda
+__label__MUSIC_QUEUE_SHOW mostrami la coda
+__label__MUSIC_QUEUE_SHOW fammi vedere la coda
+__label__MUSIC_QUEUE_SHOW dimmi le canzoni in coda di riproduzione
+__label__MUSIC_QUEUE_SHOW quali canzoni sono in coda?
+__label__MUSIC_QUEUE_SHOW in coda che canzoni ci sono?
+__label__MUSIC_QUEUE_SHOW mi dici la coda di riproduzione?
+__label__MUSIC_QUEUE_SHOW mi dici le canzoni in coda?
+__label__MUSIC_QUEUE_SHOW dimmi le canzoni in coda per favore
+__label__MUSIC_QUEUE_SHOW dimmi coda canzoni
+__label__MUSIC_QUEUE_SHOW cosa c'è in coda?
+__label__MUSIC_QUEUE_SHOW quali altre canzoni sono in coda
+__label__MUSIC_QUEUE_SHOW quali sono le prossime canzoni?
+__label__MUSIC_QUEUE_SHOW dimmi che c'è in coda
+__label__MUSIC_QUEUE_SHOW coda musica
+
+
+__label__REMINDER_SET imposta promemoria
+__label__REMINDER_SET nuovo promemoria
+__label__REMINDER_SET crea un promemoria
+__label__REMINDER_SET aggiungi promemoria
+__label__REMINDER_SET mettimi un promemoria
+__label__REMINDER_SET fissa un promemoria
+__label__REMINDER_SET ricordami di
+__label__REMINDER_SET ricordami che
+__label__REMINDER_SET puoi ricordarmi di
+__label__REMINDER_SET segna che devo
+__label__REMINDER_SET segnami che devo
+__label__REMINDER_SET appunta che devo
+__label__REMINDER_SET ricordami di chiamare il medico
+__label__REMINDER_SET ricordami di comprare il latte
+__label__REMINDER_SET ricordami di mandare la mail
+__label__REMINDER_SET segna che devo andare dal dentista
+__label__REMINDER_SET ricordami che ho la riunione
+__label__REMINDER_SET mettimi un promemoria per la spesa
+__label__REMINDER_SET imposta un promemoria per domani
+__label__REMINDER_SET ricordami di chiamare Mario domani alle 15
+__label__REMINDER_SET imposta promemoria per venerdì alle 10
+__label__REMINDER_SET ricordami di prendere le medicine alle 8
+__label__REMINDER_SET segna che devo pagare la bolletta entro lunedì
+__label__REMINDER_SET mettimi un promemoria per il 15 alle 9
+__label__REMINDER_SET ricordami della visita medica il 20 marzo
+__label__REMINDER_SET crea promemoria
+__label__REMINDER_SET voglio creare un promemoria
+__label__REMINDER_SET puoi creare un promemoria
+__label__REMINDER_SET fammi un promemoria
+__label__REMINDER_SET puoi impostare un nuovo promemoria?
+__label__REMINDER_SET ricordami che lunedì devo andare dalla dentista
+__label__REMINDER_SET ricordami che domani ho la riunione alle 9
+__label__REMINDER_SET segna che devo chiamare il medico martedì
+__label__REMINDER_SET mi ricordi di andare a scuola?
+__label__REMINDER_SET mi ricordi che ho un appuntamento?
+__label__REMINDER_SET ricordami di andare fuori alle 2 e un quarto
+__label__REMINDER_SET ricordami di uscire alle 8 e tre quarti
+__label__REMINDER_SET ricordami di svegliarmi alle 9 e mezza
+__label__REMINDER_SET mettimi un promemoria alle 3 e un quarto
+__label__REMINDER_SET ricordami alle 7 e mezza di fare colazione
+__label__REMINDER_SET ricordami di cucinare a mezzogiorno meno 10
+__label__REMINDER_SET ricordami di chiamare mario a mezzogiorno
+__label__REMINDER_SET mettimi un promemoria a mezzanotte
+__label__REMINDER_SET ricordami di dormire a mezzanotte meno 20
+__label__REMINDER_SET ricordami di mangiare a mezzogiorno e mezza
+__label__REMINDER_SET ricordami di mettere un po' di musica a mezzanotte
+__label__REMINDER_SET crea un promemoria ricordandomi di mettere su la lavatrice domani
+__label__REMINDER_SET ricordami di comprare un po' di pane
+__label__REMINDER_SET crea un promemoria ricordandomi di andare in università a mezzogiorno meno 20
+__label__REMINDER_SET ricordami di fare il bonifico giorno 23 alle 16
+__label__REMINDER_SET mettimi un promemoria giorno 18 luglio alle 10 meno 20
+__label__REMINDER_SET ricordami di chiamare filippo giorno 22 aprile
+__label__REMINDER_SET ricordami di pagare la bolletta giorno 15 alle 9
+__label__REMINDER_SET mi ricorderesti che ho un appuntamento giorno 23
+__label__REMINDER_SET mi ricordi che ho la visita medica giorno 15 marzo
+__label__REMINDER_SET potresti ricordarmi che ho un impegno giorno 8
+__label__REMINDER_SET ricordami della partita della squadra di calcetto di mio figlio lunedì alle 15 e mezza
+__label__REMINDER_SET ricordami dell'appuntamento dal medico domani alle 9
+__label__REMINDER_SET ricordami della riunione del lunedì alle 10
+
+
+__label__REMINDER_DELETE elimina promemoria
+__label__REMINDER_DELETE cancella promemoria
+__label__REMINDER_DELETE rimuovi promemoria
+__label__REMINDER_DELETE togli promemoria
+__label__REMINDER_DELETE voglio cancellare un promemoria
+__label__REMINDER_DELETE puoi eliminare un promemoria
+__label__REMINDER_DELETE rimuovi il promemoria
+__label__REMINDER_DELETE elimina il promemoria di giorno 18
+__label__REMINDER_DELETE elimina i promemoria di giorno 21 febbraio
+
+
+__label__REMINDER_SHOW dimmi i promemoria
+__label__REMINDER_SHOW mostra i promemoria
+__label__REMINDER_SHOW mostra promemoria
+__label__REMINDER_SHOW che appuntamenti ho?
+__label__REMINDER_SHOW che promemoria ho?
+__label__REMINDER_SHOW lista promemoria
+__label__REMINDER_SHOW che dovevo fare?
+__label__REMINDER_SHOW che devo fare?
+__label__REMINDER_SHOW quali promemoria ci sono?
+__label__REMINDER_SHOW cosa devo fare oggi
+__label__REMINDER_SHOW cosa ho in agenda
+__label__REMINDER_SHOW quali sono i miei promemoria
+__label__REMINDER_SHOW cosa ho in programma
+__label__REMINDER_SHOW cosa ho da fare?
+__label__REMINDER_SHOW quali appuntamenti ho in agenda
+
+
+__label__LIGHT_ON accendi la luce
+__label__LIGHT_ON accendi le luci
+__label__LIGHT_ON puoi accendere la luce?
+__label__LIGHT_ON puoi accendere le luci?
+__label__LIGHT_ON accendi la luce per favore?
+__label__LIGHT_ON accendi le luci per favore?
+__label__LIGHT_ON luce on
+__label__LIGHT_ON luci on
+__label__LIGHT_ON metti la luce
+__label__LIGHT_ON metti le luci
+__label__LIGHT_ON illumina la stanza
+__label__LIGHT_ON puoi illuminare?
+__label__LIGHT_ON dai luce
+__label__LIGHT_ON voglio la luce accesa
+__label__LIGHT_ON tieni la luce accesa
+
+
+__label__LIGHT_OFF spegni la luce
+__label__LIGHT_OFF spegni le luci
+__label__LIGHT_OFF puoi spegnere la luce?
+__label__LIGHT_OFF puoi spegnere le luci?
+__label__LIGHT_OFF spegni la luce per favore?
+__label__LIGHT_OFF spegni le luci per favore?
+__label__LIGHT_OFF luce off
+__label__LIGHT_OFF luci off
+__label__LIGHT_OFF spegni tutto
+__label__LIGHT_OFF togli la luce
+__label__LIGHT_OFF togli le luci
+__label__LIGHT_OFF voglio il buio
+__label__LIGHT_OFF buio
+__label__LIGHT_OFF voglio le luci spente
+__label__LIGHT_OFF tieni la luce spenta
+
+
+__label__APP_OPEN apri Word
+__label__APP_OPEN avvia Chrome
+__label__APP_OPEN apri Adobe Photoshop
+__label__APP_OPEN avvia Microsoft Teams
+__label__APP_OPEN puoi avviare Fortnite?
+__label__APP_OPEN puoi aprire blocco note per favore?
+__label__APP_OPEN apri Firefox
+__label__APP_OPEN avvia VLC
+__label__APP_OPEN apri Excel
+__label__APP_OPEN avvia Discord
+__label__APP_OPEN apri Telegram
+__label__APP_OPEN puoi aprire Spotify?
+__label__APP_OPEN apri Google Chrome
+__label__APP_OPEN avvia Microsoft Edge
+__label__APP_OPEN apri Visual Studio Code
+__label__APP_OPEN avvia Google Chrome per favore
+__label__APP_OPEN apri Microsoft Word
+__label__APP_OPEN apri un programma
+__label__APP_OPEN avvia un'applicazione
+__label__APP_OPEN lancia spotify
+__label__APP_OPEN lancia un programma
+__label__APP_OPEN apri qualcosa
+__label__APP_OPEN avvia qualcosa
+__label__APP_OPEN apriresti word?
+
+
+__label__APP_ADD aggiungi Excel
+__label__APP_ADD aggiungi alle app PowerPoint
+__label__APP_ADD aggiungi VLC alle app
+__label__APP_ADD aggiungi un'app
+__label__APP_ADD nuova app
+__label__APP_ADD registra questa app
+__label__APP_ADD aggiungi app
+__label__APP_ADD voglio aggiungere un'app
+__label__APP_ADD vorrei aggiungere un'applicazione
+__label__APP_ADD puoi aggiungere un'app
+
+
+__label__APP_SHOW mostra app
+__label__APP_SHOW mostrami le app
+__label__APP_SHOW dimmi la lista delle app
+__label__APP_SHOW dimmi quali app puoi aprire
+__label__APP_SHOW mostrami lista app
+__label__APP_SHOW mostra lista app
+
+
+__label__WEB_SEARCH cerca su internet la torre Eiffel
+__label__WEB_SEARCH ricerca ricette pasta al forno
+__label__WEB_SEARCH cerca informazioni su Einstein
+__label__WEB_SEARCH ricerca in rete albero
+__label__WEB_SEARCH cerca la definizione di casa
+__label__WEB_SEARCH cerca online buco nero
+__label__WEB_SEARCH fai una ricerca sulla statua della libertà
+__label__WEB_SEARCH trovami informazioni sulla legge di gravità
+__label__WEB_SEARCH cerca serpente
+__label__WEB_SEARCH cerca su internet CMOS
+__label__WEB_SEARCH trovami informazioni sulla Russia
+__label__WEB_SEARCH cerchi su internet il significato di empirico?
+__label__WEB_SEARCH cerca su internet le ultime notizie
+__label__WEB_SEARCH trovami informazioni su dante alighieri
+__label__WEB_SEARCH ricerca online la storia di roma
+__label__WEB_SEARCH cerca cos'è il machine learning
+
+
+__label__SHOW_SKILLS aiuto
+__label__SHOW_SKILLS help
+__label__SHOW_SKILLS cosa sai fare
+__label__SHOW_SKILLS lista comandi
+__label__SHOW_SKILLS mostra comandi
+__label__SHOW_SKILLS che comandi hai
+__label__SHOW_SKILLS cosa puoi fare
+__label__SHOW_SKILLS mostra skills
+__label__SHOW_SKILLS quali skills hai
+__label__SHOW_SKILLS dimmi le tue funzioni
+__label__SHOW_SKILLS cosa sei in grado di fare
+__label__SHOW_SKILLS mostrami le skills
+__label__SHOW_SKILLS quali comandi puoi svolgere
+__label__SHOW_SKILLS che cosa sai fare
+__label__SHOW_SKILLS cosa sai svolgere
+__label__SHOW_SKILLS quali sono le tue funzionalità
+__label__SHOW_SKILLS che funzioni hai

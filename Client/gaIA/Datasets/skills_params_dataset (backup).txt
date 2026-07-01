@@ -1,0 +1,262 @@
+# DAY_FUTURE
+che/X giorno/X è/X lunedì/P
+che/X giorno/X cade/X il/X 25/P dicembre/P
+il/X 14/P febbraio/P che/X giorno/X è/X
+che/X giorno/X sarà/X domani/P
+tra/X due/P giorni/P che/X giorno/X è/X
+che/X giorno/X è/X il/X prossimo/P venerdì/P
+martedì/P che/X giorno/X è?/X
+che/X giorno/X sarà/X il/X 15/P
+il/X 21/P Gennaio/P che/X giorno/X sarà/X
+che/X giorno/X viene/X il/X 26/P
+domani/P che/X giorno/X è?/X
+il/X 3/P marzo/P che/X giorno/X cade?/X
+lunedì/P prossimo/P che/X giorno/X è?/X
+che/X giorno/X sarà/X il/X 15/P Novembre?/P
+che/X giorno/X è/X mercoledì?/P
+mi/X diresti/X che/X giorno/X è/X martedì?/P
+che/X giorno/X è/X l'1?/P
+che/X giorno/X è/X l'8/P marzo?/P
+che/X giorno/X cade/X l'11/P novembre?/P
+l'1/P gennaio/P che/X giorno/X è?/X
+mi/X sapresti/X dire/X che/X giorno/X è/X giovedì?/P
+mi/X dici/X che/X giorno/X è/X il/X 17?/P
+
+# WEATHER
+che/X tempo/X fa/X oggi?/X
+che/X tempo/X c'è/X oggi?/X
+che/X tempo/X fa/X a/X Roma/P
+che/X tempo/X c'è/X a/X Milano/P
+mi/X dai/X le/X previsioni/X meteo/X
+mi/X dici/X che/X tempo/X c'è/X a/X Londra/P
+ma/X che/X tempo/X è/X previsto/X oggi/X
+quali/X sono/X le/X previsioni/X di/X oggi/X
+che/X tempo/X porta/X a/X Parigi/P
+com'è/X il/X tempo/X
+com'è/X il/X tempo/X a/X Barcellona/P
+come/X è/X il/X tempo/X
+come/X è/X il/X tempo/X a/X Berlino/P
+previsioni/X di/X oggi?/X
+a/X Pechino/P che/X tempo/X c'è?/X
+mi/X diresti/X che/X tempo/X fa/X a/X Torino?/P
+sai/X che/X tempo/X c'è/X a/X Venezia?/P
+potresti/X dirmi/X le/X previsioni/X di/X oggi?/X
+
+# MUSIC_PLAY
+metti/X Maschio/P di/X Annalisa/P
+fai/X partire/X Marziani/P
+metti/X Bohemian/P Rhapsody/P
+riproduci/X Blinding/P Lights/P di/X The/P Weeknd/P
+metti/X qualcosa/P di/X Vasco/P Rossi/P
+voglio/X ascoltare/X Thriller/P
+metti/X su/X una/X canzone/P di/X Ligabue/P
+fammi/X sentire/X Monster/P di/X Skillet/P
+metti/X su/X Lose/P Yourself/P di/X Eminem/P
+riproduci/X Thunderstruck/P degli/X AC/P DC/P
+fai/X partire/X Numb/P dei/X Linkin/P Park/P
+voglio/X ascoltare/X Hotel/P California/P degli/X Eagles/P
+metti/X Eye/P of/P the/P Tiger/P dei/X Survivor/P
+fammi/X sentire/X Back/P in/P Black/P degli/X AC/P DC/P
+metti/X storie/P brevi/P
+riproduci/X storie/P brevi/P
+metti/X maschio/P di/X annalisa/P
+metti/X monster/P
+fammi/X sentire/X shallow/P
+metti/X no/P one/P to/P kill/P in/P the/P sky/P
+riproduci/X jane/P di/X the/P long/P face/P
+ascolta/X qualcosa/P di/X rilassante/P
+metti/X su/X qualcosa/P
+voglio/X sentire/X una/X canzone/P
+riproduci/X qualcosa/P di/X vasco/P
+fai/X partire/X una/X canzone/P dei/X radiohead/P
+metti/X la/X canzone/P di/X annalisa/P
+fammi/X sentire/X qualcosa/P di/X eminem/P
+
+# MUSIC_VOLUME
+alza/X il/X volume/X a/X 80/P
+metti/X il/X volume/X a/X 50/P
+volume/X a/X 30/P
+abbassa/X il/X volume/X a/X 25/P
+imposta/X il/X volume/X a/X 60/P
+metti/X volume/X a/X 10/P
+imposta/X volume/X a/X 70/P
+alza/X
+alza/X il/X volume/X
+abbassa/X
+abbassa/X il/X volume/X
+metti/X più/X forte/P
+metti/X più/X piano/P
+volume/X a/X 100/P per/X favore/X
+puoi/X alzare/X il/X volume?/X
+
+# MUSIC_ADD_TO_QUEUE
+aggiungi/X in/X coda/X Begging/P
+aggiungi/X alla/X coda/X Stella/P di/X Broadway/P di/X Cesare/P Cremonini/P
+metti/X in/X coda/X storie/P brevi/P
+accoda/X Shallow/P
+dopo/X riproduci/X Occidentalis/P karma/P di/X Gabbani/P
+dopo/X metti/X High/P Above/P
+metti/X Alaska/P baby/P dopo/X
+riproduci/X Balorda/P nostalgia/P dopo/X
+metti/X in/X coda/X Scatola/P di/X Laura/P Pausini/P
+accoda/X Estate/P dei/X Negramaro/P
+metti/X solo/P 3/P minuti/P dei/X Negramaro/P dopo/X
+riproduci/X animals/P dei/X Maroon/P 5/P dopo/X per/X favore/X
+aggiungi/X in/X coda/X oh/P ma/P di/X Rocco/P Hunt/P e/X Noemi/P
+aggiungi/X alla/X coda/X la/X mia/P città/P
+dopo/X riproduci/X aranciata/P
+metti/X in/X coda/X Monster/P di/X Skillet/P
+metti/X in/X coda/X Bohemian/P Rhapsody/P
+metti/X in/X coda/X qualcosa/P di/X Vasco/P Rossi/P
+metti/X in/X coda/X Thriller/P
+metti/X in/X coda/X una/X canzone/P di/X Ligabue/P
+aggiungi/X Shallow/P alla/X coda/X
+metti/X in/X coda/X Shallow/P
+aggiungi/X shallow/P alla/X coda/X
+metti/X in/X coda/X aranciata/P di/X madame/P
+puoi/X aggiungere/X in/X coda/X skillet/P
+puoi/X aggiungere/X in/X coda/X musica/P rilassante/P
+puoi/X aggiungere/X alla/X coda/X qualcosa/P
+aggiungi/X in/X coda/X qualcosa/P di/X rilassante/P
+metteresti/X in/X coda/X qualcosa?/P
+potresti/X mettere/X in/X coda/X qualcosa?/P
+puoi/X mettere/X in/X coda/X qualcosa?/P
+metteresti/X in/X coda/X jane/P per/X cortesia/X
+potresti/X mettere/X in/X coda/X qualcosa/P per/X favore/X
+
+# REMINDER_SET
+imposta/X promemoria/X
+nuovo/X promemoria/X
+crea/X un/X promemoria/X
+aggiungi/X promemoria/X
+mettimi/X un/X promemoria/X
+fissa/X un/X promemoria/X
+ricordami/X di/X
+ricordami/X che/X
+puoi/X ricordarmi/X di/X
+segna/X che/X devo/X
+segnami/X che/X devo/X
+appunta/X che/X devo/X
+ricordami/X di/X chiamare/P il/X medico/P
+ricordami/X di/X comprare/P il/X latte/P
+ricordami/X di/X mandare/P la/X mail/P
+segna/X che/X devo/X andare/P dal/X dentista/P
+ricordami/X che/X ho/P la/X riunione/P
+mettimi/X un/X promemoria/X per/X la/X spesa/P
+imposta/X un/X promemoria/X per/X domani/P
+ricordami/X di/X chiamare/P Mario/P domani/P alle/P 15/P
+imposta/X promemoria/X per/X venerdì/P alle/P 10/P
+ricordami/X di/X prendere/P le/X medicine/P alle/P 8/P
+segna/X che/X devo/X pagare/P la/X bolletta/P entro/P lunedì/P
+mettimi/X un/X promemoria/X per/X il/X 15/P alle/P 9/P
+ricordami/X della/P visita/P medica/P il/X 20/P marzo/P
+crea/X promemoria/X
+voglio/X creare/X un/X promemoria/X
+puoi/X creare/X un/X promemoria/X
+fammi/X un/X promemoria/X
+puoi/X impostare/X un/X nuovo/X promemoria?/X
+ricordami/X che/X lunedì/P devo/P andare/P dalla/P dentista/P
+ricordami/X che/X domani/P ho/P la/X riunione/P alle/P 9/P
+segna/X che/X devo/X chiamare/P il/X medico/P martedì/P
+segna/X che/X devo/X andare/P dal/P dentista/P lunedì/P
+ricordami/X di/X portare/P il/P cane/P dal/P veterinario/P
+ricordami/X che/X ho/X la/X riunione/P
+ricordami/X che/X ho/X un/X appuntamento/P dal/P medico/P
+segna/X che/X ho/X la/X visita/P medica/P domani/P
+mi/X ricordi/X di/X andare/P a/P scuola?/P
+mi/X ricordi/X che/X ho/X un/X appuntamento?/X
+ricordami/X di/X andare/P fuori/P alle/X 2/P e/P un/P quarto/P
+ricordami/X di/X uscire/P alle/P 8/P e/P tre/P quarti/P
+ricordami/X di/X svegliarmi/P alle/P 9/P e/P mezza/P
+mettimi/X un/X promemoria/X alle/P 3/P e/P un/P quarto/P
+ricordami/X alle/P 7/P e/P mezza/P di/X fare/P colazione/P
+ricordami/X di/X cucinare/P a/X mezzogiorno/P meno/P 10/P
+ricordami/X di/X chiamare/P mario/P a/X mezzogiorno/P
+mettimi/X un/X promemoria/X a/X mezzanotte/P
+ricordami/X di/X dormire/P a/X mezzanotte/P meno/P 20/P
+ricordami/X di/X mangiare/P a/X mezzogiorno/P e/P mezza/P
+ricordami/X di/X mettere/P un/P po'/P di/P musica/P a/X mezzanotte/P
+crea/X un/X promemoria/X ricordandomi/X di/X mettere/P su/P la/P lavatrice/P domani/P
+ricordami/X di/X comprare/P un/P po'/P di/P pane/P
+crea/X un/X promemoria/X ricordandomi/X di/X andare/P in/P università/P a/X mezzogiorno/P meno/P 20/P
+ricordami/X di/X fare/P il/P bonifico/P giorno/P 23/P alle/X 16/P
+mettimi/X un/X promemoria/X giorno/P 18/P luglio/P alle/X 10/P meno/P 20/P
+ricordami/X di/X chiamare/P filippo/P giorno/P 22/P aprile/P
+ricordami/X di/X pagare/P la/P bolletta/P giorno/P 15/P alle/X 9/P
+mi/X ricorderesti/X che/X ho/X un/X appuntamento/P giorno/P 23/P
+mi/X ricordi/X che/X ho/X la/X visita/P medica/P giorno/P 15/P marzo/P
+potresti/X ricordarmi/X che/X ho/X un/X impegno/P giorno/P 8/P
+ricordami/X della/X partita/P della/P squadra/P di/P calcetto/P di/P mio/P figlio/P lunedì/X alle/X 15/P e/P mezza/P
+ricordami/X dell'/X appuntamento/P dal/P medico/P domani/P alle/X 9/P
+ricordami/X della/X riunione/P del/P lunedì/P alle/X 10/P
+
+# REMINDER_DELETE
+elimina/X promemoria/X
+cancella/X promemoria/X
+rimuovi/X promemoria/X
+togli/X promemoria/X
+voglio/X cancellare/X un/X promemoria/X
+puoi/X eliminare/X un/X promemoria/X
+rimuovi/X il/X promemoria/X
+elimina/X il/X promemoria/X di/X giorno/P 18/P
+elimina/X i/X promemoria/X di/X giorno/P 21/P febbraio/P
+elimina/X il/X promemoria/X chiamare/P il/X medico/P
+cancella/X il/X promemoria/X comprare/P il/X latte/P
+rimuovi/X promemoria/X andare/P dal/X dentista/P
+togli/X il/X promemoria/X riunione/P di/X lunedì/P
+
+# APP_OPEN
+apri/X Word/P
+avvia/X Chrome/P
+apri/X Adobe/P Photoshop/P
+avvia/X Microsoft/P Teams/P
+puoi/X avviare/X Fortnite?/P
+puoi/X aprire/X blocco/P note/P per/X favore?/X
+apri/X Firefox/P
+avvia/X VLC/P
+apri/X Excel/P
+avvia/X Discord/P
+apri/X Telegram/P
+puoi/X aprire/X Spotify?/P
+apri/X Google/P Chrome/P
+avvia/X Microsoft/P Edge/P
+apri/X Visual/P Studio/P Code/P
+avvia/X Google/P Chrome/P per/X favore/X
+apri/X Microsoft/P Word/P
+apri/X un/X programma/P
+avvia/X un'applicazione/P
+lancia/X spotify/P
+lancia/X un/X programma/P
+apri/X qualcosa/P
+avvia/X qualcosa/P
+apriresti/X word?/P
+
+# APP_ADD
+aggiungi/X Excel/P
+aggiungi/X alle/X app/X PowerPoint/P
+aggiungi/X VLC/P alle/X app/X
+aggiungi/X un'app/X
+nuova/X app/X
+registra/X questa/X app/X
+aggiungi/X app/X
+voglio/X aggiungere/X un'app/X
+vorrei/X aggiungere/X un'applicazione/P
+puoi/X aggiungere/X un'app/X
+
+# WEB_SEARCH
+cerca/X su/X internet/X la/X torre/P Eiffel/P
+ricerca/X ricette/P pasta/P al/P forno/P
+cerca/X informazioni/X su/X Einstein/P
+ricerca/X in/X rete/X albero/P
+cerca/X la/X definizione/P di/X casa/P
+cerca/X online/X buco/P nero/P
+fai/X una/X ricerca/X sulla/X statua/P della/X libertà/P
+trovami/X informazioni/X sulla/X legge/P di/X gravità/P
+cerca/X serpente/P
+cerca/X su/X internet/X CMOS/P
+trovami/X informazioni/X sulla/X Russia/P
+cerchi/X su/X internet/X il/X significato/P di/X empirico?/P
+cerca/X su/X internet/X le/X ultime/P notizie/P
+trovami/X informazioni/X su/X dante/P alighieri/P
+ricerca/X online/X la/X storia/P di/X roma/P
+cerca/X cos'è/X il/X machine/P learning/P

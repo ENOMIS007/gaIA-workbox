@@ -1,0 +1,878 @@
+WindowManager:
+    LoginScreen:
+    SignInScreen:
+    MainWindow:
+    ChatWindow:
+    SettingsWindow:
+    
+
+
+
+<CustomButton>:
+    background_normal: ''
+    background_down: ''
+    background_color: 0, 0, 0, 0
+    color: 1, 1, 1, 1
+    halign: 'left'
+    valign: 'middle'
+    font_name: "Roboto"
+    shorten: True
+    shorten_from: 'right'
+    text_size: self.width - 25, self.height
+    size_hint: None, None
+    height: 50
+    canvas.before:
+        Color:
+            rgba:
+                (0, 0, 0, 1) if self.state == 'down' else \
+                (60/255, 63/255, 65/255, 1) if self.active or self.hovering else \
+                (0, 0, 0, 0)
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [18]
+
+
+
+<HoverBox>:
+    size_hint: None, None
+    size: 250, 50
+
+
+    CustomButton:
+        id: main_hoverbox_button
+        text: "Pulsante Principale"
+        width: 210 if not self.hovering else 180
+        text_size: self.width - 25, self.height
+        pos: root.pos
+        on_release:
+            main_hoverbox_button.activate()
+            root.function()
+            
+    Widget:
+        size_hint: None, None
+        size: 10, 50
+        pos: 165, main_hoverbox_button.y
+        canvas.before:
+            Color:
+                rgba: 60/255, 63/255, 65/255, 1 if main_hoverbox_button.hovering else 0
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                
+    Button:
+        id: action_menu_button
+        text: "[b]‧‧‧[/b]"
+        font_size: 24
+        font_name: "Roboto"
+        markup: True
+        size_hint: None, None
+        size: 50, 50
+        pos: 160, main_hoverbox_button.y
+        background_normal: ''
+        background_down: ''
+        background_color: 0, 0, 0, 0
+        color: 1, 1, 1, 1
+        opacity: 1 if main_hoverbox_button.hovering else 0
+        halign: 'center'
+        valign: 'middle'
+        text_size: self.size
+        on_release: app.root.get_screen('chat').show_action_menu(action_menu_button)
+        canvas.before:
+            Color:
+                rgba: 
+                    (0, 0, 0, 1) if main_hoverbox_button.state == 'down' else \
+                    (60/255, 63/255, 65/255, 1)
+            RoundedRectangle:
+                pos: self.pos
+                size: self.size
+                radius: [18]
+
+
+
+<Sidebar@BoxLayout>:
+    orientation: 'vertical'
+    size_hint: None, None
+    width: 200
+    height: root.parent.height if root.parent else 200  # Adatta l'altezza alla finestra
+    padding: 10
+    spacing: 10
+    pos: root.parent.width, 0  # Posizionamento iniziale fuori dallo schermo (a destra)
+
+    canvas.before:
+        Color:
+            rgba: 0.2, 0.2, 0.2, 1  # Grigio scuro
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    Button:
+        text: "Chat"
+        size_hint_y: None
+        height: '60dp'
+        font_name: "Roboto"
+        on_release: app.go_to_chat()
+        
+    Button:
+        text: 'Vuoto!'
+        size_hint_y: None
+        height: '60dp'
+        font_name: "Roboto"
+        
+#     Button:
+#         text: 'Vuoto!'
+#         size_hint_y: None
+#         height: '60dp'
+#         font_name: "Roboto"
+
+
+    Widget:
+        size_hint_y: 1
+        
+    Label:
+        text: "[b]Made by:[/b]"
+        size_hint_y: None
+        height: '16dp'
+        font_name: "Roboto"
+        markup: True
+        
+    Label:
+        text: "[b]Simone Longhitano[/b]"
+        size_hint_y: None
+        height: '14dp'
+        font_name: "Roboto"
+        markup: True
+        
+    Label:
+        text: "[b]Pastone[/b]"
+        size_hint_y: None
+        height: '14dp'
+        font_name: "Roboto"
+        markup: True
+        
+    Widget:
+        size_hint_y: None
+        height: '4dp'
+        
+        
+        
+<ChatSidebar@BoxLayout>:
+    orientation: 'vertical'
+    size_hint: None, None
+    width: 230
+    height: root.parent.height if root.parent else 200  # Adatta l'altezza alla finestra
+    padding: 10
+    spacing: 10
+    pos: -root.parent.width, 0  # Posizionamento iniziale fuori dallo schermo (a sinistra)
+
+    canvas.before:
+        Color:
+            rgba: 0.2, 0.2, 0.2, 1  # Grigio scuro
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            
+    Button:
+        text: "Home"
+        size_hint_y: None
+        height: '60dp'
+        font_name: "Roboto"
+        on_release: app.go_to_main()
+
+    Button:
+        text: "Nuova chat"
+        size_hint_y: None
+        height: '60dp'
+        font_name: "Roboto"
+        on_release: app.root.get_screen('chat').new_chat()
+
+
+    ScrollView:
+        size_hint_y: 1
+        do_scroll_x: False
+
+        BoxLayout:
+            id: chat_buttons_container
+            orientation: 'vertical'
+            size_hint_y: None
+            height: self.minimum_height
+        
+#     Widget:
+#         size_hint_y: 1
+
+
+
+<IconButton>:
+    source: ''
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: root.background_rgba
+        Ellipse:
+            size: self.size
+            pos: self.pos
+    Image:
+        id: user_icon
+        source: root.source
+        size: self.parent.size
+        pos: self.parent.pos
+        allow_stretch: True
+        keep_ratio: True
+
+
+
+
+<SignInScreen>:
+    name: 'sign-in'
+    FloatLayout:
+    
+        FloatLayout:
+            size_hint: None, None
+            size: 400, 40
+            pos_hint: {'center_x': 0.5, 'top': 0.95}
+            opacity: 0
+            id: error_container
+
+            canvas.before:
+                Color:
+                    rgba: 0.4, 0.2, 0.2, 1  # grigio-rosso
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: [10]
+
+            BoxLayout:
+                id: error_box
+                orientation: 'horizontal'
+                size: self.parent.size
+                pos: self.parent.pos
+                padding: 10
+                spacing: 10
+
+                Image:
+                    source: '..\Immagini\error_icon.png'
+                    size_hint_x: None
+                    width: 30
+                    allow_stretch: True
+                    keep_ratio: True
+
+                Label:
+                    id: error_label
+                    text: "Email e password sono obbligatori!"
+                    font_size: '16sp'
+                    color: 1, 1, 1, 1
+                    halign: 'left'
+                    valign: 'middle'
+                    text_size: self.size
+    
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: None, None
+            width: 400
+            height: 360
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            spacing: 15
+
+            Label:
+                text: "Registrazione"
+                font_size: '32sp'
+                size_hint: None, None
+                width: 400
+                height: 80
+                halign: 'center'
+                valign: 'middle'
+                text_size: self.size
+
+            TextInput:
+                id: email
+                hint_text: "Email"
+                hint_text_color: (0.7, 0.7, 0.7, 1)
+                background_color: (60 / 255, 63 / 255, 65 / 255, 1)
+                cursor_color: (1, 1, 1, 1)
+                foreground_color: (1, 1, 1, 1)
+                multiline: False
+                size_hint: None, None
+                width: 400
+                height: 40
+
+            TextInput:
+                id: password
+                hint_text: "Password"
+                hint_text_color: (0.7, 0.7, 0.7, 1)
+                background_color: (60 / 255, 63 / 255, 65 / 255, 1)
+                cursor_color: (1, 1, 1, 1)
+                foreground_color: (1, 1, 1, 1)
+                multiline: False
+                password: True
+                size_hint: None, None
+                width: 400
+                height: 40
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint: None, None
+                width: 400
+                height: 30
+                spacing: 5
+
+                CheckBox:
+                    id: show_password_cb
+                    on_active: password.password = not self.active
+                    size_hint: None, None
+                    width: 30
+                    height: 30
+
+                Label:
+                    text: "Mostra password"
+                    font_size: '16sp'
+                    size_hint: None, None
+                    width: 260
+                    height: 30
+                    valign: 'middle'
+                    halign: 'left'
+                    text_size: self.size
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint: None, None
+                width: 400
+                height: 30
+                spacing: 5
+
+                CheckBox:
+                    id: keep_logged_cb
+                    size_hint: None, None
+                    width: 30
+                    height: 30
+
+                Label:
+                    text: "Mantieni l'accesso"
+                    font_size: '16sp'
+                    size_hint: None, None
+                    width: 260
+                    height: 30
+                    valign: 'middle'
+                    halign: 'left'
+                    text_size: self.size
+
+            Button:
+                text: "Invia"
+                size_hint: None, None
+                width: 400
+                height: 50
+                on_release:
+                    root.do_sign_in()
+                    
+            Widget:
+                size_hint: None, None
+                width: 400
+                height: 50
+
+
+
+
+<LoginScreen>:
+    name: 'login'
+    FloatLayout:
+    
+        FloatLayout:
+            size_hint: None, None
+            size: 400, 40
+            pos_hint: {'center_x': 0.5, 'top': 0.95}
+            opacity: 0
+            id: error_container
+
+            canvas.before:
+                Color:
+                    rgba: 0.4, 0.2, 0.2, 1  # grigio-rosso
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: [10]
+
+            BoxLayout:
+                id: error_box
+                orientation: 'horizontal'
+                size: self.parent.size
+                pos: self.parent.pos
+                padding: 10
+                spacing: 10
+
+                Image:
+                    source: '..\Immagini\error_icon.png'
+                    size_hint_x: None
+                    width: 30
+                    allow_stretch: True
+                    keep_ratio: True
+
+                Label:
+                    id: error_label
+                    text: "Credenziali errate!"
+                    font_size: '16sp'
+                    color: 1, 1, 1, 1
+                    halign: 'left'
+                    valign: 'middle'
+                    text_size: self.size
+    
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: None, None
+            width: 400
+            height: 360
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            spacing: 15
+
+            Label:
+                text: "Login"
+                font_size: '32sp'
+                size_hint: None, None
+                width: 400
+                height: 80
+                halign: 'center'
+                valign: 'middle'
+                text_size: self.size
+
+            TextInput:
+                id: email
+                hint_text: "Email"
+                hint_text_color: (0.7, 0.7, 0.7, 1)
+                background_color: (60 / 255, 63 / 255, 65 / 255, 1)
+                cursor_color: (1, 1, 1, 1)
+                foreground_color: (1, 1, 1, 1)
+                multiline: False
+                size_hint: None, None
+                width: 400
+                height: 40
+
+            TextInput:
+                id: password
+                hint_text: "Password"
+                hint_text_color: (0.7, 0.7, 0.7, 1)
+                background_color: (60 / 255, 63 / 255, 65 / 255, 1)
+                cursor_color: (1, 1, 1, 1)
+                foreground_color: (1, 1, 1, 1)
+                multiline: False
+                password: True
+                size_hint: None, None
+                width: 400
+                height: 40
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint: None, None
+                width: 400
+                height: 30
+                spacing: 5
+
+                CheckBox:
+                    id: show_password_cb
+                    on_active: password.password = not self.active
+                    size_hint: None, None
+                    width: 30
+                    height: 30
+
+                Label:
+                    text: "Mostra password"
+                    font_size: '16sp'
+                    size_hint: None, None
+                    width: 260
+                    height: 30
+                    valign: 'middle'
+                    halign: 'left'
+                    text_size: self.size
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint: None, None
+                width: 400
+                height: 30
+                spacing: 5
+
+                CheckBox:
+                    id: keep_logged_cb
+                    size_hint: None, None
+                    width: 30
+                    height: 30
+
+                Label:
+                    text: "Mantieni l'accesso"
+                    font_size: '16sp'
+                    size_hint: None, None
+                    width: 260
+                    height: 30
+                    valign: 'middle'
+                    halign: 'left'
+                    text_size: self.size
+
+            Button:
+                text: "Invia"
+                size_hint: None, None
+                width: 400
+                height: 50
+                on_release:
+                    root.do_login()
+                    
+            Button:
+                text: "Registrati"
+                size_hint: None, None
+                width: 400
+                height: 50
+                on_release:
+                    root.go_to_sign_in()
+
+
+    
+<SettingsWindow>:
+    name: "settings"
+    
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
+        
+        BoxLayout:
+            size_hint_y: None
+            height: '40dp'
+            orientation: 'horizontal'
+                
+            Widget:
+                size_hint_x: 1 
+                
+            Button:
+                text: "Home"
+                size_hint_x: None
+                width: '60dp'
+                font_name: "Roboto"
+                on_release: app.go_to_main()
+                
+        BoxLayout:
+            orientation: "vertical"
+            size: root.width, root.height
+            
+            Label:
+                text: "Settings Screen"
+                font_size: 32
+                font_name: "Roboto"
+                
+            Label:
+                id: logged_user_label
+                text: "utente loggato"
+                font_size: 21
+                font_name: "Roboto"
+            
+            Button:
+                text: "Logout"
+                size_hint: None, None
+                size: 200, 50
+                pos_hint: {'center_x': 0.5}
+                on_release:
+                    root.logout()
+            
+#             Button:
+#                 text: "2"
+#                 size_hint_x: None
+#                 width: '60dp'
+#                 size_hint_y: None
+#                 height: '40dp'
+#                 font_name: "Roboto"
+#                 
+#             Button:
+#                 text: "3"
+#                 size_hint_x: None
+#                 width: '60dp'
+#                 size_hint_y: None
+#                 height: '40dp'
+#                 font_name: "Roboto"
+#                 
+#             Button:
+#                 text: "4"
+#                 size_hint_x: None
+#                 width: '60dp'
+#                 size_hint_y: None
+#                 height: '40dp'
+#                 font_name: "Roboto"
+    
+    
+    
+<MainWindow>:
+    name: "main"
+    
+    
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10     
+
+        BoxLayout:
+            orientation: "vertical"
+            size: root.width, root.height
+            
+            Widget:
+                size_hint_y: 1
+            
+            Label:
+                text: "[b]Main Screen[/b]"
+                font_size: 32
+                size_hint_y: None
+                font_name: "Roboto"
+                markup: True
+                
+            Widget:  
+                size_hint_y: None
+                height: '260dp'
+                
+            Label:
+                id: user_request_label
+                text: 
+                font_size: 16
+                size_hint_y: None
+                height: '40dp'
+                font_name: "Roboto"
+                
+            Widget:
+                size_hint_y: 1
+                
+            Widget:
+                size_hint_y: None
+                height: '40dp'
+                
+                
+    FloatLayout:
+    
+        IconButton:
+            source: '../Immagini/test.png'
+            size_hint: None, None
+            size: 50, 50
+            pos: 10, self.parent.height - self.height - 10
+            on_release: app.go_to_settings()
+
+        Sidebar:
+            id: sidebar
+            opacity: 0  # Nasconde il menu inizialmente
+
+        Button:
+            id: menu_button
+            text: '[b]|||[/b]'
+            font_name: "Roboto"
+            markup: True
+            size_hint: None, None
+            size: 80, 40
+            pos: self.parent.width - self.width - 10, self.parent.height - self.height - 10  # Posizionato in alto a destra
+            on_release: root.toggle_sidebar()
+                
+                    
+                
+<ChatWindow>:
+    name: "chat"
+    
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
+
+        ScrollView:
+            size_hint_x: 1
+            size_hint_y: None
+            height: root.height - user_input.height - 110
+            bar_width: 4
+            scroll_type: ['bars', 'content']
+            bar_color: (1, 1, 1, 1)
+            bar_inactive_color: (0.7, 0.7, 0.7, 0.5)
+
+            BoxLayout:
+                id: chat_window
+                size_hint_y: None
+                orientation: 'vertical'
+                spacing: 40
+                height: self.minimum_height
+
+        BoxLayout:
+            size_hint_y: None
+            height: user_input.height + 10
+            orientation: 'horizontal'
+            spacing: 10
+
+            CustomTextInput:
+                id: user_input
+                app: app
+                size_hint_x: 1
+                size_hint_y: None
+                height: self.minimum_height
+                multiline: True
+                font_name: "Roboto"
+                hint_text: "Scrivi un messaggio a gaIA"
+                hint_text_color: (0.7, 0.7, 0.7, 1)
+                background_color: (0, 0, 0, 0)
+                cursor_color: (1, 1, 1, 1)
+                foreground_color: (1, 1, 1, 1)
+                padding: [10, 10]
+                
+                
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint: None, None
+                size: 40, 50
+
+                IconButton:
+                    source: '../Immagini/send_icon.png'
+                    size_hint: None, None
+                    size: 40, 40
+                    on_release: root.send_message()
+                    
+                Widget:
+                    size_hint_y: None
+                    height: 0.1
+                
+                Widget:
+                    size_hint_x: None
+                    width: 0.1
+                    
+                    
+            Widget:
+                size_hint_x: None
+                width: 0.1
+
+                
+
+    FloatLayout:
+        id: float_layout
+        
+        FloatLayout:
+            size_hint_y: None
+            height: 90  # Altezza fissa come l'immagine
+            pos_hint: {'top': 1}
+
+            Image:
+                source: '../Immagini/chat_name_box.png'
+                allow_stretch: True
+                keep_ratio: False
+                size_hint: 1, 1
+                pos_hint: {'top': 1}
+
+            Label:
+                id: chat_name
+                text: ""
+                bold: True
+                font_size: 22
+                size_hint: None, None
+                size: self.texture_size
+                pos_hint: {'center_x': 0.5, 'center_y': 0.65}
+                font_name: "Roboto"
+                color: 1, 1, 1, 1  # Bianco, modifica se necessario
+
+
+        # Sidebar sovrapposta
+        Sidebar:
+            id: sidebar
+            opacity: 0  # Nasconde il menu inizialmente
+            
+        ChatSidebar:
+            id: chat_sidebar
+            opacity: 0  # Nasconde il menu inizialmente
+            
+
+        # Pulsante Menu posizionato assolutamente
+        Button:
+            id: menu_button
+            text: '[b]|||[/b]'
+            font_name: "Roboto"
+            markup: True
+            size_hint: None, None
+            size: 80, 40
+            pos: self.parent.width - self.width - 10, self.parent.height - self.height - 10  # Posizionato in alto a destra
+            on_release: root.toggle_sidebar()
+            
+        IconButton:
+            id: user_button
+            source: '../Immagini/test.png'
+            size_hint: None, None
+            size: 50, 50
+            pos: 10, self.parent.height - self.height - 10 # Posizionato in alto a sinistra
+            on_release: root.toggle_chat_sidebar()
+          
+            
+        Widget:
+            id: overlay
+            canvas:
+                Color:
+                    rgba: 0, 0, 0, 0.7
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size: self.parent.size
+            pos: self.parent.pos
+            opacity: 0
+            on_touch_down: root.on_overlay_touch_down(args[1]) or False # intercetta i touch per chiudere il menu
+
+        BoxLayout:
+            id: action_box
+            orientation: 'vertical'
+            size_hint: None, None
+            size: 160, 170
+            pos: 0, 0  # posizione aggiornata dinamicamente in Python
+            opacity: 0
+            disabled: True
+            spacing: 5
+            padding: 5
+            canvas.before:
+                Color:
+                    rgba: 0.2, 0.2, 0.2, 1
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: [10]
+
+            CustomButton:
+                text: "[b]Modifica[/b]"
+                font_name: "Roboto"
+                markup: True
+                width: 150
+                on_release: root.on_action_button('modifica')
+
+            CustomButton:
+                text: "[b]Bho[/b]"
+                font_name: "Roboto"
+                markup: True
+                width: 150
+                on_release: root.on_action_button('bho')
+
+            CustomButton:
+                text: "[b]Elimina[/b]"
+                font_name: "Roboto"
+                markup: True
+                width: 150
+                on_release: root.on_action_button('elimina')
+
+        Label:
+            id: input_label
+            text: " [b]Nome chat:[/b]"
+            font_name: "Roboto"
+            markup: True
+            size_hint: None, None
+            size: self.texture_size
+            pos: chat_name_input.x, chat_name_input.top + 5
+            color: 1, 1, 1, 1
+            opacity: 0
+            disabled: True
+            canvas.before:
+                Color:
+                    rgba: 0.06, 0.06, 0.06, 1 
+                Rectangle:
+                    pos: self.x, self.y - 3
+                    size: self.width + 130, self.height + 15
+
+        TextInput:
+            id: chat_name_input
+            hint_text: "Nome"
+            font_name: "Roboto"
+            multiline: False
+            size_hint: None, None
+            background_color: (60 / 255, 63 / 255, 65 / 255, 1)
+            cursor_color: (1, 1, 1, 1)
+            foreground_color: (1, 1, 1, 1)
+            opacity: 0
+            disabled: True
+            on_text_validate: root.change_chat_name(self)
+
+                
