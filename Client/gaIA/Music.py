@@ -6,6 +6,34 @@ import threading
 from queue import Queue
 from youtubesearchpython import VideosSearch
 
+
+# Logger custom per yt-dlp: le versioni recenti richiedono un oggetto con
+# metodi debug/warning/error invece di scrivere direttamente su sys.stdout.
+# Necessario in ambienti embedded (es. Kivy) dove sys.stdout può non essere
+# un file-like object valido.
+class _YtdlpLogger:
+    def debug(self, msg):
+        if msg.startswith('[debug] '):
+            pass  # sopprime i messaggi di debug verbose
+        else:
+            print(msg)
+
+    def info(self, msg):
+        print(msg)
+
+    def warning(self, msg):
+        print(f"[yt-dlp WARNING] {msg}")
+
+    def error(self, msg):
+        print(f"[yt-dlp ERROR] {msg}")
+
+
+_YTDLP_OPTS_BASE = {
+    'quiet': True,
+    'no_warnings': True,
+    'logger': _YtdlpLogger(),
+}
+
 # Pre-inizializza l'istanza VLC all'import del modulo.
 # Il costo della prima inizializzazione (rigenerazione cache plugin)
 # avviene così all'avvio dell'app, non durante la prima richiesta dell'utente.
@@ -54,11 +82,8 @@ def prepare_song(song_query):
     if not video_url:
         return None
 
-    with yt_dlp.YoutubeDL({
-        'quiet': True,
-        'format': 'bestaudio[ext=m4a]/bestaudio',
-        'no_warnings': True
-    }) as ydl:
+    ydl_opts = {**_YTDLP_OPTS_BASE, 'format': 'bestaudio[ext=m4a]/bestaudio'}
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info_dict = ydl.extract_info(video_url, download=False)
         audio_url = None
         for fmt in info_dict.get("formats", []):
